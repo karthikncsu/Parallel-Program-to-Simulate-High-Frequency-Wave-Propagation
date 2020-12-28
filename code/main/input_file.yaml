@@ -1,0 +1,100 @@
+# *****************************************************************************
+#                          My own CONFIGURATION FILE
+# *****************************************************************************
+#   Comments section: more options to be included in future
+#					  The format of the file is as follows
+#					  Start section1
+#					  #opt_typ <value>	
+#					  #opt_typ2 <value>	
+#					  .......
+#					  Start section2
+#					  #opt_typ1 <value>	
+#					  .......
+#					  Start section3
+#					  #opt_typ1 <value>	
+#					  .......
+#					  .......
+# -----------------------------------------------------------------------------
+#       Configuration Option # = 0
+#       Option Value  #1 =1 - 1D
+#                         2 - 2D  
+#                         3 - 3D  
+#       Option Value= #2 - Mesh file name
+#		Option Value= #3 - left coord for oned
+#		Option Value= #4 - right coord for oned
+#		Option Value= #5 - dx
+#-------------------------------------------------------------------------------
+start spacedim
+1 3
+2 test1dgrid.dat
+3 0
+4 1
+5 0.005
+#-------------------------------------------------------------------------------		
+#	   Physics type and material properties
+#      	Physics type           # 1= Elastic Equation			
+#      	Material Properties    # 2: Density
+#							   # 3: Young's Modulus
+#							   # 4: Poisson's ratio
+#--------------------------------------------------------------------------------
+start phy_type
+1   1
+2   2700
+3   7e10
+4   0.33
+#--------------------------------------------------------------------------------
+# 		Discretization type and basis function
+#	    Discretization type  # 1= 1 Finite difference
+#								  2 Finite element 
+#	    Discretization order # 2= 1 Linear
+#								  2 Quadratic
+#	    Basis function(FEM)  # 3= 1 Lagrangian
+#       						  2 Taylor Basis(For DG Methods)
+#								  3 Legendre Basis(For DG Methods)
+#--------------------------------------------------------------------------------
+start disc
+1   1
+2   1
+3   1
+#--------------------------------------------------------------------------------
+#		Boundary Conditions (Implemented only for 1D for now)
+#      	 Left boundary       # 1= 1 Dirchilet
+#       						  2 Newmann
+#								  3 Periodic			
+#      	 Right boundary      # 2  options Same as that of left boundary
+#		 Condition value	 # 3  left hand boundary magnitude
+#		 					 # 4  Right hand boundary magnitude
+#		 Function type  	 # 5  1 constant value
+#       						  2 sine wave
+#       						  3 five cycle tone burst
+#		 Frequency(Hz)	  	 # 6  Central Frequency in case of tone burst
+#--------------------------------------------------------------------------------
+start bc
+1 1
+2 1
+3 1
+4 0
+5 3
+6 2e5
+#-------------------------------------------------------------------------------
+#		Study type and settings
+#		Study type			 # 1= 1 Time Dependent Solution
+#       Tim dependent methods# 2  1 Explicit
+#								  2 Implicit
+# 							 # 3  Start time
+#		 					 # 4  end time
+#		 					 # 5  time step
+#		 					 # 6  time step to save
+#      Number of Iterations if using implicit solvers  
+#		 					 # 7: Maximum number of iterations
+#							 # 8: Toleance Value for termination
+# -----------------------------------------------------------------------------
+start study
+1  1
+2  1
+3  0
+4  1e-3
+5  1e-8
+6  1e-6
+7  2000
+8  1e-8

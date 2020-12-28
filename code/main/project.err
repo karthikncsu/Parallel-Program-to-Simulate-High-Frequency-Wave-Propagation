@@ -1,0 +1,18 @@
++ echo Working directory is /raid60/home/klyatha/ce791_hpc/wave_propogation/present_code_start_fresh_bezier_working_good_with_short_int/present_code_start_fresh_bezier_working_good_with_short_int/main
++ cd /raid60/home/klyatha/ce791_hpc/wave_propogation/present_code_start_fresh_bezier_working_good_with_short_int/present_code_start_fresh_bezier_working_good_with_short_int/main
+++ hostname
++ echo Running on host node17
+++ date
++ echo Time is Mon Dec 11 17:08:07 EST 2017
+++ pwd
++ echo Directory is /raid60/home/klyatha/ce791_hpc/wave_propogation/present_code_start_fresh_bezier_working_good_with_short_int/present_code_start_fresh_bezier_working_good_with_short_int/main
++ echo This jobs runs on the following processors:
+++ cat /var/spool/torque/aux//694.localhost.cl.ncsu.edu
++ echo node17 node17 node17 node17 node17 node17 node17 node17 node17 node17 node17 node17 node17 node17 node17 node17 node16 node16 node16 node16 node16 node16 node16 node16 node16 node16 node16 node16 node16 node16 node16 node16 node15 node15 node15 node15 node15 node15 node15 node15 node15 node15 node15 node15 node15 node15 node15 node15 node14 node14 node14 node14 node14 node14 node14 node14 node14 node14 node14 node14 node14 node14 node14 node14 node13 node13 node13 node13 node13 node13 node13 node13 node13 node13 node13 node13 node13 node13 node13 node13 node12 node12 node12 node12 node12 node12 node12 node12 node12 node12 node12 node12 node12 node12 node12 node12 node11 node11 node11 node11 node11 node11 node11 node11 node11 node11 node11 node11 node11 node11 node11 node11 node10 node10 node10 node10 node10 node10 node10 node10 node10 node10 node10 node10 node10 node10 node10 node10 node9 node9 node9 node9 node9 node9 node9 node9 node9 node9 node9 node9 node9 node9 node9 node9 node8 node8 node8 node8 node8 node8 node8 node8 node8 node8 node8 node8 node8 node8 node8 node8 node7 node7 node7 node7 node7 node7 node7 node7 node7 node7 node7 node7 node7 node7 node7 node7 node6 node6 node6 node6 node6 node6 node6 node6 node6 node6 node6 node6 node6 node6 node6 node6 node5 node5 node5 node5 node5 node5 node5 node5 node5 node5 node5 node5 node5 node5 node5 node5 node4 node4 node4 node4 node4 node4 node4 node4 node4 node4 node4 node4 node4 node4 node4 node4 node3 node3 node3 node3 node3 node3 node3 node3 node3 node3 node3 node3 node3 node3 node3 node3 node2 node2 node2 node2 node2 node2 node2 node2 node2 node2 node2 node2 node2 node2 node2 node2
+++ wc -l
++ NUM_CORES=256
++ echo This job has allocated nodes
++ OUTPUT_DIR=output
++ echo /var/spool/torque/aux//694.localhost.cl.ncsu.edu
++ cat /var/spool/torque/aux//694.localhost.cl.ncsu.edu
++ mpiexec -machinefile /var/spool/torque/aux//694.localhost.cl.ncsu.edu -np 256 ./project

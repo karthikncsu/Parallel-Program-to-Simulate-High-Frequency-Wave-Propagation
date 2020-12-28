@@ -1,0 +1,15 @@
+space dim :    3
+ Grid name :test1dgrid.dat      
+Density : 0.3E+04
+Youngs Modulus : 0.7E+11
+Poissons Ratio : 0.3E+00
+bcl :    1
+bcr :    1
+bclv : 0.1E+01
+bcrv : 0.0E+00
+Study Method :    1
+t0 : 0.0E+00
+tf : 0.1E-02
+dt : 0.1E-07
+Niter : 2000
+Tolerance : 0.1E-07

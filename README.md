@@ -1,1 +1,1 @@
-# Parallel-Program-to-Simulate-High-Frequency-Wave-Propagation
+# Parallel Program to Simulate Lamb Wave Propagation
